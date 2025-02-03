@@ -11,7 +11,12 @@ function agregarAmigo(){
     } else{
         amigos.push(name);
     }
+    limpiarCaja();
 
     console.log(amigos);
     
+}
+
+function limpiarCaja(){
+    let textoCaja = document.getElementById('amigo').value = '';
 }
