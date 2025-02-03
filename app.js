@@ -36,5 +36,17 @@ function lista(){
 
     }
     
-    
+}
+
+function sortearAmigo(){
+    if (amigos.length == 0){
+        alert('Agregue amigos');
+    } else{
+        let indiceAleatorio = Math.floor(Math.random() * amigos.length);
+        console.log(indiceAleatorio);
+        let amigoSecreto = amigos[indiceAleatorio];
+        let mensajeGanador = document.getElementById('resultado');
+        mensajeGanador.innerHTML = `Tu amigo secreto es: ${amigoSecreto}`;
+
+    }
 }
