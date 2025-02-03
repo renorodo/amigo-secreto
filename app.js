@@ -3,6 +3,15 @@ let amigos = [];
 
 function agregarAmigo(){
 
-    amigos.push(document.getElementById('amigo').value);
+    //amigos.push(document.getElementById('amigo').value);
+    let name = document.getElementById('amigo').value
+
+    if( name == ""){
+        alert("ERROR: Agregar un nombre, no se puede agregar nombres en blanco");
+    } else{
+        amigos.push(name);
+    }
+
+    console.log(amigos);
     
 }
